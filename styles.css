@@ -1,0 +1,828 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* REGLA GLOBAL PARA APLICAR LA FUENTE RETRO VT323 EN TODO EL SITIO */
+body, input, button, p, span, div {
+  font-family: 'VT323', monospace !important;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #000000;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.iphone {
+  background-color: #171717;
+  overflow: hidden;
+  width: 390px;
+  min-height: 844px; /* Altura base del móvil, permite scroll */
+  position: relative;
+  margin: 0 auto;
+}
+
+/* SISTEMA DE CAMBIO DE PÁGINAS */
+.page-view {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-view.active {
+  display: block;
+}
+
+/* ========================================== */
+/* ESTILOS COMUNES (PÁGINA 1 Y 2)             */
+/* ========================================== */
+.iphone .iniciohaha {
+  top: 103px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  object-fit: cover;
+}
+
+.iphone .img {
+  top: 403px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  object-fit: cover;
+}
+
+.iphone .iniciohaha-2 {
+  top: 699px;
+  height: 145px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  object-fit: cover;
+}
+
+/* ========================================== */
+/* PÁGINA 1: INICIO                           */
+/* ========================================== */
+.iphone #page-start {
+  height: 100%;
+}
+
+.iphone #page-start .group-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 153px;
+  z-index: 10;
+}
+
+.iphone #page-start .rectangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 153px;
+  background-color: #200035;
+}
+
+.iphone #page-start .footer {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 390px;
+  height: 52px;
+  object-fit: cover;
+}
+
+.iphone input.rectangle-3 {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  width: 183px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 0 10px;
+  font-size: 16px; /* Subido para lectura clara pixel */
+  color: #000000;
+  outline: none;
+}
+
+.iphone input.rectangle-3::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.iphone button.rectangle-4 {
+  position: absolute;
+  top: 85px;
+  left: 214px;
+  width: 39px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-size: 18px; /* Subido para lectura clara */
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone #page-start .yop {
+  position: absolute;
+  top: 84px;
+  left: 265px;
+  width: 105px;
+  height: 37px;
+  object-fit: cover;
+}
+
+/* CAJA DE TEXTO (AHORA ARRIBA, DONDE ESTABA EL TROLLFACE) */
+.iphone #page-start .group {
+  position: absolute;
+  left: calc(50.00% - 173px);
+  top: 224px; /* Posición original donde arrancaba el Trollface */
+  width: 346px;
+  height: 163px;
+}
+
+/* GIF INICIO / TROLLFACE (AHORA ABAJO, DONDE ESTABA LA CAJA DE TEXTO) */
+.iphone .inicioo {
+  position: absolute;
+  left: calc(50.00% - 175px);
+  bottom: 141px; /* Posición original donde arrancaba la caja de texto */
+  width: 350px;
+  height: 198px;
+  object-fit: cover;
+}
+
+/* BOTÓN PRESS START (UN POCO MÁS ARRIBA) */
+.iphone .press {
+  position: absolute;
+  top: calc(50.00% + 15px); /* Antes estaba en +43px, al bajar el número SUBE el botón */
+  left: calc(50.00% - 44px);
+  width: 88px;
+  height: 31px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.iphone #page-start .div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 346px;
+  height: 163px;
+  background-color: #ffffff;
+}
+
+.iphone .HOLAAAA-soy-AGUZ-y {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 322px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 5, 126, 1) 0%,
+    rgba(255, 225, 0, 1) 14%,
+    rgba(0, 255, 30, 1) 24%,
+    rgba(255, 113, 0, 1) 34%,
+    rgba(144, 0, 255, 1) 46%,
+    rgba(200, 0, 128, 1) 60%,
+    rgba(255, 0, 0, 1) 73%,
+    rgba(0, 111, 255, 1) 86%,
+    rgba(0, 38, 227, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 19px; /* Tamaño pixel ideal */
+  text-align: center;
+  line-height: 20px;
+}
+
+.iphone #page-start .rectangle {
+  position: absolute;
+  top: 741px;
+  left: 0;
+  width: 390px;
+  height: 103px;
+  background-color: #200035;
+  z-index: 4;
+}
+
+.iphone #page-start .boobs {
+  position: absolute;
+  top: 792px;
+  left: calc(50.00% - 195px);
+  width: 390px;
+  height: 52px;
+  object-fit: cover;
+  z-index: 5;
+}
+
+/* 2. FOOTER PÁGINA 1 */
+.iphone #page-start .p.creditos {
+  position: absolute;
+  top: 761px;
+  left: 10px;
+  width: 370px; /* Amplitud para que entre en una sola línea */
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 15px; /* Tamaño ideal para una sola línea */
+  text-align: center;
+  white-space: nowrap; /* Evita que salte de línea */
+  z-index: 5;
+}
+
+/* ========================================== */
+/* PÁGINA 2: ERROR                            */
+/* ========================================== */
+.iphone #page-error {
+  height: 100%;
+}
+
+.iphone #page-error .group-header-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 153px;
+  z-index: 10;
+}
+
+.iphone #page-error .div-header-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 153px;
+  background-color: #200035;
+}
+
+.iphone #page-error .rectangle-2-error {
+  position: absolute;
+  top: 72px;
+  left: 19px;
+  width: 183px;
+  height: 62px;
+  background-color: #ffffff;
+}
+
+.iphone #page-error .group-2-error {
+  position: absolute;
+  top: 77px;
+  left: 208px;
+  width: 56px;
+  height: 49px;
+  object-fit: cover;
+}
+
+.iphone .ENTRADA-PROHIBIDA {
+  position: absolute;
+  top: 75px;
+  left: 24px;
+  width: 173px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 5, 126, 1) 0%,
+    rgba(255, 113, 0, 1) 34%,
+    rgba(144, 0, 255, 1) 46%,
+    rgba(200, 0, 128, 1) 60%,
+    rgba(255, 0, 0, 1) 73%,
+    rgba(0, 111, 255, 1) 86%,
+    rgba(0, 38, 227, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 17px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.iphone #page-error .yop-error {
+  position: absolute;
+  top: 84px;
+  left: 265px;
+  width: 105px;
+  height: 37px;
+  object-fit: cover;
+}
+
+.iphone #page-error .footer-error {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 390px;
+  height: 52px;
+  object-fit: cover;
+}
+
+.iphone .group-3-collage {
+  position: absolute;
+  top: 176px;
+  left: 16px;
+  width: 358px;
+  height: 541px;
+}
+
+.iphone .XD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 278px;
+  height: 157px;
+  object-fit: cover;
+}
+
+.iphone .lololo {
+  position: absolute;
+  top: 140px;
+  left: 118px;
+  width: 240px;
+  height: 136px;
+  object-fit: cover;
+}
+
+.iphone .uwuu {
+  position: absolute;
+  top: 262px;
+  left: 0;
+  width: 265px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.iphone .suck {
+  position: absolute;
+  top: 391px;
+  left: 93px;
+  width: 265px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.iphone .virus {
+  top: 228px;
+  left: 211px;
+  width: 166px;
+  height: 54px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.iphone .virus-2 {
+  top: 372px;
+  left: 31px;
+  width: 118px;
+  height: 38px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.iphone .virus-3 {
+  top: 502px;
+  left: 240px;
+  width: 130px;
+  height: 43px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.iphone .signopregunta {
+  top: 602px;
+  left: 20px;
+  width: 106px;
+  height: 106px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.iphone .signopregunta-2 {
+  top: 143px;
+  left: 288px;
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.iphone #page-error .rectangle-footer-error {
+  position: absolute;
+  top: 741px;
+  left: 0;
+  width: 390px;
+  height: 103px;
+  background-color: #200035;
+  z-index: 4;
+}
+
+.iphone #page-error .boobs-footer-error {
+  position: absolute;
+  top: 792px;
+  left: calc(50.00% - 195px);
+  width: 390px;
+  height: 52px;
+  object-fit: cover;
+  z-index: 5;
+}
+
+/* 3. FOOTER PÁGINA 2 (ERROR) */
+.iphone .text-wrapper-footer-error {
+  position: absolute;
+  top: 761px;
+  left: 10px;
+  width: 370px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+/* ========================================== */
+/* PÁGINA 3: SECCIÓN OFICIAL (ÉXITO)          */
+/* ========================================== */
+.iphone #page-success {
+  background-color: #d4c9ff;
+  position: relative;
+  width: 390px;
+  height: 1180px;
+  overflow: hidden;
+}
+
+.iphone #page-success .rectangle-bg-top {
+  top: 240px;
+  width: 390px;
+  height: 423px;
+  background-color: #c2bffe;
+  position: absolute;
+  left: 0;
+}
+
+.iphone #page-success .rectangle-bg-bottom {
+  top: 1125px;
+  width: 390px;
+  height: 65px;
+  background-color: #c2bffe;
+  position: absolute;
+  left: 0;
+}
+
+.iphone #page-success .divider-top {
+  top: 236px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  height: 4px;
+  object-fit: cover;
+}
+
+.iphone #page-success .divider-middle {
+  top: 663px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  height: 4px;
+  object-fit: cover;
+}
+
+.iphone #page-success .divider-bottom {
+  top: 1121px;
+  position: absolute;
+  left: 0;
+  width: 390px;
+  height: 4px;
+  object-fit: cover;
+}
+
+/* 4. FOOTER PÁGINA 3 (ÉXITO) */
+.iphone #page-success .credits-success {
+  position: absolute;
+  top: 1150px;
+  left: 10px;
+  width: 370px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.iphone .group-intro {
+  position: absolute;
+  top: 746px;
+  left: 20px;
+  width: 352px;
+  height: 79px;
+}
+
+.iphone .rectangle-intro {
+  top: 0;
+  width: 350px;
+  height: 79px;
+  background-color: #c3c2fe;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.iphone #page-success .text-intro {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 326px;
+  color: #ffffff;
+  font-size: 16px; /* Ajustado para mejor legibilidad */
+  text-align: center;
+  line-height: 17px;
+}
+
+.iphone .group-picrews {
+  position: absolute;
+  top: 267px;
+  left: 20px;
+  width: 352px;
+  height: 49px;
+}
+
+.iphone .rectangle-picrews {
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 49px;
+  background-color: #d4c9ff;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.iphone #page-success .text-picrews {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 326px;
+  color: #ffffff;
+  font-size: 16px; /* Ajustado para mejor legibilidad */
+  text-align: center;
+  line-height: 17px;
+}
+
+.iphone .rectangle-gifts-container {
+  top: 329px;
+  left: 20px;
+  width: 350px;
+  height: 322px;
+  background-color: #d4c9ff;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.iphone .bears-img {
+  position: absolute;
+  top: 76px;
+  left: 20px;
+  width: 123px;
+  height: 129px;
+  object-fit: cover;
+}
+
+.iphone .group-welcome {
+  position: absolute;
+  top: 66px;
+  left: 143px;
+  width: 236px;
+  height: 139px;
+}
+
+.iphone .group-welcome-text {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  width: 214px;
+  height: 113px;
+}
+
+.iphone .rectangle-welcome {
+  top: 0;
+  left: 0;
+  width: 212px;
+  height: 113px;
+  background-color: #c3c2fe;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.iphone .text-welcome {
+  position: absolute;
+  top: 10px;          /* Subimos un toque para centrarlo verticalmente */
+  left: 8px;
+  width: 196px;       /* Mantiene el ancho contenido */
+  color: #ffffff;
+  font-size: 16px;    /* Achicamos de 16px a 14px para que no quede tan apretado */
+  text-align: center;
+  line-height: 15px;  /* Ajustamos el interlineado para que sea más compacto */
+  padding: 0 4px;     /* Margen interno extra a los lados */
+}
+
+.iphone .kaoaniartwork2 {
+  position: absolute;
+  top: 106px;
+  left: 209px;
+  width: 27px;
+  height: 33px;
+  object-fit: cover;
+}
+
+.iphone .kaoaniartwork1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+}
+
+.iphone .pixel-divider-top {
+  position: absolute;
+  top: 674px;
+  left: calc(50.00% - 195px);
+  width: 390px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.iphone .rectangle-header-strip {
+  top: 0;
+  width: 390px;
+  height: 45px;
+  background-color: #c2bffe;
+  position: absolute;
+  left: 0;
+}
+
+.iphone .header-strip-img {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 390px;
+  height: 22px;
+  object-fit: cover;
+}
+
+.iphone .group-gifts-collage {
+  position: absolute;
+  top: 868px;
+  left: 34px;
+  width: 322px;
+  height: 210px;
+}
+
+.iphone .regalito1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+}
+
+.iphone .regalito2 {
+  position: absolute;
+  top: 15px;
+  left: 245px;
+  width: 77px;
+  height: 61px;
+  object-fit: cover;
+}
+
+.iphone .regalito3 {
+  position: absolute;
+  top: 46px;
+  left: calc(50.00% - 42px);
+  width: 75px;
+  height: 82px;
+  object-fit: cover;
+}
+
+.iphone .regalito4 {
+  position: absolute;
+  top: 128px;
+  left: 6px;
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+}
+
+.iphone .regalito5 {
+  position: absolute;
+  top: 132px;
+  left: 256px;
+  width: 48px;
+  height: 78px;
+  object-fit: cover;
+}
+
+.iphone .pixel-divider-gifts-top {
+  top: 14px;
+  left: calc(50.00% - 85px);
+  position: absolute;
+  width: 160px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.iphone .pixel-divider-gifts-bottom {
+  top: 146px;
+  left: calc(50.00% - 81px);
+  position: absolute;
+  width: 160px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.iphone .mouse-icon {
+  position: absolute;
+  top: 252px;
+  left: 16px;
+  width: 23px;
+  height: 29px;
+  object-fit: cover;
+}
+
+.iphone .music-notes {
+  position: absolute;
+  top: 223px;
+  left: 319px;
+  width: 41px;
+  height: 33px;
+  object-fit: cover;
+}
+
+/* CONTENEDOR INTERNO DEL PICREW */
+.picrew-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+.picrew-cover {
+  position: static;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.btn-picrew {
+  position: static;
+  background-color: #c3c2fe;
+  color: #ffffff;
+  font-size: 18px; /* Tamaño retro perfecto para el botón */
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px #a49eed;
+  transition: transform 0.1s, background-color 0.1s;
+}
+
+.btn-picrew:hover {
+  background-color: #b1adfd;
+}
+
+.btn-picrew:active {
+  transform: translateY(2px);
+  box-shadow: 0px 1px 0px #a49eed;
+}

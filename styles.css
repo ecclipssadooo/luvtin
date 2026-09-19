@@ -30,7 +30,7 @@ a {
 .iphone {
   background-color: #171717;
   overflow: hidden;
-  width: 100%;
+  width: 390px;
   min-height: 844px; /* Altura base del móvil, permite scroll */
   position: relative;
   margin: 0 auto;

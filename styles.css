@@ -11,14 +11,13 @@ body, input, button, p, span, div {
 }
 
 html, body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #000000;
-  min-height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Oculta y bloquea completamente el scroll hacia los lados */
-  display: flex;
-  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Desactiva solo el scroll de los costados */
+  overflow-y: auto;   /* Mantiene el scroll hacia abajo habilitado */
 }
 
 button:focus-visible {
@@ -31,12 +30,17 @@ a {
 
 .iphone {
   background-color: #171717;
-  overflow: hidden;
-  width: 100%;
-  max-width: 390px; /* Se adapta automáticamente a pantallas más chicas */
-  min-height: 844px;
+  width: 100%;       /* Se adapta al ancho exacto del Xiaomi o cualquier pantalla */
+  max-width: 100%;
+  min-height: 100vh;
   position: relative;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.iphone img {
+  max-width: 100%;    /* Asegura que ninguna imagen sobrepase el ancho de la pantalla */
+  height: auto;
 }
 
 /* SISTEMA DE CAMBIO DE PÁGINAS */

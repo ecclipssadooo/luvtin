@@ -17,6 +17,8 @@ html, body {
   min-height: 100%;
   display: flex;
   justify-content: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 button:focus-visible {
